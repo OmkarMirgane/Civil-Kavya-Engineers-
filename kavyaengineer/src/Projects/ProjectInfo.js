@@ -128,7 +128,7 @@ export function Card6() {
       </div>
       <img
         id="proinfoimage"
-        src={require("../images/6.bmp")}
+        src={require("../images/8.jpg")}
         alt="Wait Project Loading.."
       />
     </div>
