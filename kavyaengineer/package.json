@@ -2,6 +2,7 @@
   "name": "kavyaengineer",
   "version": "0.1.0",
   "private": true,
+  "proxy":"http://localhost:8000",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -24,7 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "both": "concurrently \"npm run start\" \"nodemon BackendServer/index.js\""
+    "both": "concurrently \"npm run start\" \"nodemon Server/apps.js\""
   },
   "eslintConfig": {
     "extends": [
