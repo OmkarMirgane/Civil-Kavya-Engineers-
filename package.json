@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":"cd kavyaengineer && npm run build",
+    "install-kavyaengineer": "cd kavyaengineer && npm install",
+    "heroku-postbuild":"npm run install-kavyaengineer && npm run build",
+    "start": "node apps.js",
+    "kavyaengineer":"cd kavyaengineer && npm start",
+    "dev":"concurrently -n 'apps,kavyaengineer' -c 'red,green' \"nodemon apps.js\" \"npm run kavyaengineer\"" 
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "mongodb": "^4.7.0",
+    "mongoose": "^6.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  }
+}
