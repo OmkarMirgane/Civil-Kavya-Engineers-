@@ -158,7 +158,7 @@ function Home() {
                 >
                   <img
                     id="imgcard"
-                    src={require("../images/6.bmp")}
+                    src={require("../images/8.bmp")}
                     alt="Wait Project Loading.."
                   />
                   {isHovering && (
