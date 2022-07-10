@@ -92,7 +92,7 @@ function BuyCommercial() {
               onMouseOut={handleMouseOut}
             >
               <img
-                src={require("../images/6.bmp")}
+                src={require("../images/8.jpg")}
                 alt="Wait Project Loading.."
               />
               {isHovering && (
