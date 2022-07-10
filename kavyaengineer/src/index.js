@@ -28,6 +28,9 @@ import BuyProperty from "./SellBuyModal/BuyProperty";
 import LeaseCommercial from "./SellBuyModal/LeaseCommercial";
 import RentingHome from "./SellBuyModal/RentingHome";
 import SellPropert from "./SellBuyModal/SellPropert";
+import Details from "./Modal/Details";
+import Edit from "./Modal/Edit";
+import UserInfo from "./Components/UserInfo";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -45,7 +48,7 @@ root.render(
         <Route exact path="/card5" element={<Card5 />} />
         <Route exact path="/card6" element={<Card6 />} />
 
-        <Route exact path="/buyCommmercial" element={<BuyCommercial />} />
+        <Route exact path="/getInfo" element={<BuyCommercial />} />
         <Route exact path="/buyProperty" element={<BuyProperty />} />
         <Route exact path="/leaseCommercial" element={<LeaseCommercial />} />
         <Route exact path="/rentingHome" element={<RentingHome />} />
@@ -53,11 +56,15 @@ root.render(
 
         <Route exact path="/about" element={<Aboutus />} />
         <Route exact path="/contact" element={<Contactus />} />
-        <Route exact path="/Loginmodel" element={<Loginmodel />} />
-        <Route exact path="/registration" element={<Register />} />
+        <Route exact path="/login" element={<Loginmodel />} />
+        <Route exact path="/userinfo" element={<UserInfo />} />
         <Route exact path="/interiorcard2" element={<TVUNITS />} />
         <Route exact path="/interiorcard1" element={<Room />} />
         <Route exact path="/interiorcard3" element={<POP />} />
+
+        <Route exact path="/register" element={<Register />} />
+        <Route exact path="/details" element={<Details />} />
+        <Route exact path="/edit" element={<Edit />} />
       </Routes>
     </BrowserRouter>
 
